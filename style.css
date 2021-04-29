@@ -1,0 +1,117 @@
+body, html, a, p, h1, ul {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+  text-decoration: none;
+
+}
+
+#container {
+  background-color: hsl(257, 40%, 49%);
+  background-image: url(images/bg-desktop.svg);
+  width: 1440px;
+  height: 800px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 10vh 60vh 10vh;
+  grid-template-areas: "logo logo" "items items" "social-medias social-medias";
+}
+
+.top {
+  grid-area: logo;
+}
+
+.logo, .image {
+  padding: 50px;
+}
+
+.items {
+  grid-area: items;
+  display: flex;
+  justify-content: space-around;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 35%;
+  margin-right: 100px;
+}
+
+.texts h1, .texts p {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.texts h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 2.5em;
+}
+
+.texts p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.social-medias {
+  grid-area: social-medias;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: end;
+  padding: 20px;
+}
+
+.social-medias ul{
+  display: flex;
+  text-align: center;
+  padding: 40px;
+}
+
+.social-medias ul li {
+  width: 20px;
+  height: 21px;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid white;
+  margin-right: 10px;
+}
+
+
+.button {
+  width: 160px;
+  padding: 10px;
+  background-color: white;
+  color: hsl(257, 40%, 49%);
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px #2c2c2c;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}
+
+
+.button:hover, .social-medias li:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+  transition: 0.5s;
+}
+
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+  color: black;
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
