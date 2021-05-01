@@ -17,8 +17,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0/hub/huddle-landing-page-with-flexbox-SytzoijYR)
-- Live Site URL: [Add live site URL here](https://huddle-landing-page-sigma-peach.vercel.app/)
+- Solution URL: https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0/hub/huddle-landing-page-with-flexbox-SytzoijYR)
+- Live Site URL: (https://huddle-landing-page-sigma-peach.vercel.app/)
 
 ### Built with
 
