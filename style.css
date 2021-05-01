@@ -12,35 +12,37 @@ body, html, a, p, h1, ul {
 #container {
   background-color: hsl(257, 40%, 49%);
   background-image: url(images/bg-desktop.svg);
-  width: 1440px;
+  width: 75%;
   height: 800px;
   margin: 30px auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 10vh 60vh 10vh;
-  grid-template-areas: "logo logo" "items items" "social-medias social-medias";
 }
 
-.top {
-  grid-area: logo;
-}
 
-.logo, .image {
+.logo {
   padding: 50px;
 }
 
 .items {
-  grid-area: items;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+}
+
+.image {
+  margin: 0 50px;
+  width: 50%;
+}
+
+.image img {
+  width: 100%;
 }
 
 .texts {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   max-width: 35%;
-  margin-right: 100px;
+  margin-bottom: 50px;
 }
 
 .texts h1, .texts p {
@@ -59,17 +61,15 @@ body, html, a, p, h1, ul {
 }
 
 .social-medias {
-  grid-area: social-medias;
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: end;
+  justify-content: flex-end;
   padding: 20px;
+  text-align: center;
+  margin-right: 50px;
 }
 
 .social-medias ul{
   display: flex;
-  text-align: center;
-  padding: 40px;
 }
 
 .social-medias ul li {
@@ -114,4 +114,60 @@ body, html, a, p, h1, ul {
 
 .attribution a { 
   color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 1000px){
+  #container {
+    height: auto;
+    background-image: url(images/bg-mobile.svg);
+  }
+
+  .items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .texts, .image {
+    max-width: 80%;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .texts h1 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 700px){
+
+  .logo img {
+    width: 100px;
+  }
+
+  .logo {
+    padding: 25px;
+  }
+
+  .items {
+    text-align: center;
+    width: 100%;
+  }
+  .texts h1, .texts p {
+    text-align: center;
+  }
+
+  .texts h1 {
+    font-size: 1.1em;
+  }
+
+  .image {
+    margin: auto;
+  }
+
+  .social-medias {
+    width: 90%;
+    justify-content: center;
+  }
 }
